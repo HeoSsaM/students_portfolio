@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+body {
+    font-family: 'NanumSquareNeo';
+    max-width: 100%
+}
+
+/* 공통요소 */
+.inner {
+    position: relative;
+    margin: 0 auto;
+    padding:0 20px;
+}
+
+h3 {
+    display: block;
+    font-family: 'MaruBuri';
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h3::before {
+    border: 2px solid #201010;
+    margin-right: 10px;
+    content: '';
+}
+.m-logo {
+    font-family: 'MaruBuri';
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    
+}
+figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+header .inner .menu-area {
+    display: block;
+}
+
+header .inner .menu-area ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header .inner .menu-area ul li:hover {
+    color: #715a5a;
+}
+
+/* 모바일메뉴 */
+.mobile-nav {
+    position: absolute;
+    font-family: 'MaruBuri';
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-size: 24px;
+    text-align: center;
+    justify-content: ;
+}
+.btn-mobile {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.menu-area {
+    background: rgba(255, 255, 255, 0.24);
+}
+.mobile-nav span, 
+.mobile-nav .btn-mobile {
+    display: block;
+}
+.mobile-nav li {
+    padding: 20px 50px;
+    border-bottom: 1px solid #d3e8f570;
+}
+
+.mobile-nav a:hover {
+    color: #321111;}
+
+
+/* main-visual */
+#main-visual {
+    height: 550px;
+    margin-bottom: 150px;
+}
+
+#main-visual article {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-70%);
+    padding-right: 40px;
+}
+
+#main-visual article p {
+    line-height: 1.5;
+    color: #edfff0;
+}
+
+#main-visual article .slogan {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#main-visual article .text {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#main-visual article .btn {
+    padding: 7px 20px;
+    font-size: 18px;
+    margin-left: 0;
+    margin-right: 20px;
+    border: 2px solid #edfff0;
+}
+
+
+/* section - studio */
+#studio {
+    margin-bottom: 150px;
+}
+#studio .inner .about {
+    display: block;
+    padding-left: 0;
+}
+
+#studio .inner figure img {
+    max-width: 100%;
+    height: 400px;
+    display: block;
+    padding: 0;
+}
+
+#studio .inner .text-group {
+    width: 100%;
+    font-size: 14px;
+    color: #715a5a;
+    margin-top: 30px;
+}
+
+#studio .text-group p {
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+#studio .inner .about .text-group span {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#studio .text-group .btn {
+    padding: 5px 30px 5px 30px;
+    margin-left: 200px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* section - program */
+
+#program {
+    margin-bottom: 150px;
+}
+
+#program .card-group {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+
+#program .card-group .index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    width: 50px;
+}
+
+#program article {
+    padding: 20px 0;
+}
+#program article figure {
+    height: 250px;
+}
+#program article img {
+    max-height: 100%;
+}
+#program article .text {
+    display: none;
+}
+
+
+#program article .text-area {
+    text-align: center;
+    line-height: 1.5;
+    padding: 30px 0;            
+    transition: background-color .2s ease;
+}
+
+#program article .text-area:hover {
+    background-color: #715a5a1a;
+    border-radius: 0 0 20px 20px;
+}
+
+#program .card-group .text-area span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #715a5a;
+    margin-bottom: 20px;
+}
+
+#program .card-group .text-area p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #715a5a;
+    margin-bottom: 20px;
+}
+
+#program article .btn {
+    padding: 5px 30px 5px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #edfff0;
+    border: 2px solid #715a5a;
+    border-radius: 30px;
+    color: #715a5a;
+}
+
+#program article .btn:hover {
+    background: #715a5a;
+    color: #edfff0;
+}
+
+
+
+
+
+
+
+/* footer */
+.mobile-footer {
+    display: block;
+}
+#footer .inner {
+    display: block;
+    font-size: 12px;
+    padding: 40px 20px;
+}
+
+#footer .f-left {
+    display: none;
+}
+
+
+#footer .f-right {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-right: 20px;
+}
+
+#footer .f-right .option-group {
+    display: none;
+}
+
+#footer .f-right .sns-group {
+/*     display: grid;
+    grid-template-columns: 1fr; */
+}
+#footer .f-right .sns-group img {
+    width: 25px;
+    display: inline-block;
+    margin-left: 5px;
+}

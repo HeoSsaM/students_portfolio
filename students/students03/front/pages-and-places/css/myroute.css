@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* ====================================
+   varibles
+==================================== */
+/* 기본리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #f8f5ef;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 헤더 */
+.main-header {
+  width: 100%;
+  padding: 24px 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(40, 28, 18, 0.2);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.main-header .logo a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Cormorant Garamond", serif;
+}
+.main-header .main-nav {
+  display: flex;
+  gap: 28px;
+}
+.main-header .main-nav a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  position: relative;
+}
+.main-header .main-nav a:hover, .main-header .main-nav a:active {
+  color: #fff;
+}
+.main-header .main-nav a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+.main-header .main-nav a:hover::after, .main-header .main-nav a:active::after {
+  width: 100%;
+}
+.main-header #authMenu {
+  color: #fff;
+}
+.main-header #authMenu a,
+.main-header #authMenu span {
+  display: inline-block;
+  margin-right: 16px;
+}
+.main-header #authMenu button {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+/* 히어로 */
+.hero {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+.hero .hero-content span {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+}
+.hero .hero-content h1 {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 4px;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.hero .hero-content h2 {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* footer */
+.footer {
+  padding: 28px 0;
+  background: #3a2d24;
+}
+.footer .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.footer .inner p {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+
+.myroute-hero {
+  background: linear-gradient(rgba(40, 28, 18, 0.55), rgba(40, 28, 18, 0.75)), url("https://images.unsplash.com/photo-1621414154392-4eb9ee0b6f57?w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fCVFQiVBQyVCOCVFRCU5NSU5OSVFQyVBNyU4MCVFQiU4RiU4NHxlbnwwfHwwfHx8MA%3D%3D") center/cover no-repeat;
+}
+
+/* 상태 카드 */
+.myroute-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 60px 8% 40px;
+  background: rgb(255, 252, 243);
+}
+.myroute-summary .summary-card {
+  border: 1px solid rgba(91, 70, 54, 0.15);
+  padding: 32px;
+  text-align: center;
+}
+.myroute-summary .summary-card span {
+  color: #7a6655;
+  font-size: 16px;
+}
+.myroute-summary .summary-card p {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 12px;
+  color: #3a2f2f;
+}
+
+.wish {
+  padding: 100px 10%;
+  background: #f8f5ef;
+}
+.wish .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.wish .title span {
+  font-size: 20px;
+}
+.wish .title h2 {
+  font-size: 38px;
+  color: #3a2f2f;
+}
+.wish .wish-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.wish .wish-grid .wish-card {
+  background: #fdf8ee;
+  border: 1px solid #d8c7a0;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 4px 6px 15px rgba(90, 60, 30, 0.12);
+  transition: 0.3s;
+  position: relative;
+}
+.wish .wish-grid .wish-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 6px 10px 20px rgba(90, 60, 30, 0.18);
+}
+.wish .wish-grid .wish-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #4b3621;
+}
+.wish .wish-grid .wish-card p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 25px;
+}
+.wish .wish-grid .wish-card button {
+  padding: 12px 20px;
+  border: none;
+  background: #7b2d26;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.wish .wish-grid .wish-card button:hover {
+  background: #5e1f1a;
+}
+
+.route-section {
+  padding: 60px 10%;
+  background: #f8f5ef;
+}
+.route-section .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.route-section .title span {
+  font-size: 20px;
+}
+.route-section .title h2 {
+  font-size: 38px;
+  color: #3a2f2f;
+}
+.route-section .route-list {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+.route-section .route-list::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #c9b28d;
+}
+.route-section .route-list .route-item {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e6d7cf;
+  background: #fff;
+}
+.route-section .route-list .route-item strong {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+}
+.route-section .route-list .route-item p {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/*# sourceMappingURL=myroute.css.map */

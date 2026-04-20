@@ -1,0 +1,264 @@
+@charset "utf-8";
+ * {box-sizing: border-box;}
+
+ /* 공통 */
+section + section {
+    padding: 50px 0
+}
+section h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+section .text {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+section .btn {
+    padding: 10px 30px;
+    font-size: 16px;    
+}
+
+/* header */
+header {
+    position: fixed;
+}
+header .logo {
+    position: relative;
+    z-index: 100;
+    height: 40px;
+}
+header .logo img {
+    height: 100%;
+}
+header .btn-mobile {
+    position: absolute;
+    top: 50%; right: 25px;
+    transform: translateY(-50%);
+    width: 30px; 
+    z-index: 100;
+}
+header .btn-mobile span {
+    display: block;
+    width: 100%; height: 2px;
+    background: #fff;
+}
+header .btn-mobile span + span {
+    margin-top: 8px;
+}
+header .gnb-area {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 10;
+    display: none;
+}
+header .gnb-area .gnb {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 15%; left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+}
+header .gnb-area .gnb > li > a {
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+header .gnb-area .gnb > li > a:hover {
+    text-shadow: none;
+}
+
+
+/* main-visual 영역 */
+#main-visual {
+    height: 60vh;
+    background-position: right center;
+}
+#main-visual .inner {
+    justify-content: center;
+}
+#main-visual .main-title {
+    padding-right: 0;
+    text-align: center;
+}
+#main-visual .main-title .slogan {
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+#main-visual .main-title .text {
+    font-size: 18px;
+}
+
+/* story */
+#sec-intro .inner {
+    padding: 0;
+    flex-direction: column;
+    row-gap: 30px;
+    column-gap: 0;
+}
+#sec-intro figure {
+    width: 100%
+}
+#sec-intro .text-area {
+    text-align: center;
+}
+#sec-intro .text-area h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#sec-intro .text-area strong {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#sec-intro .text-area .text {
+    font-size: 18px;
+}
+
+
+/* 추천메뉴 */
+#sec-recommend .recommend-list {
+    display: block;
+    width: 80%;
+    margin: 0 auto 40px;
+}
+.recommend-list li {
+    height: auto;
+    padding: 25px 25px 40px; 
+    margin-bottom: 20px;
+}
+.recommend-list li .btn-area {
+    position: static;
+    transform: none;
+    margin-top: 25px;
+}
+
+/* 이벤트 영역 */
+#event {
+    height: 250px;    
+}
+#event .inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#event .event-text {
+    position: static;
+    transform: none;
+    text-align: center;
+}
+#event .event-text h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* 리뷰영역 */
+.review-list {
+    display: block;
+}
+.review-list li {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.review-list li > a {
+    height: 250px;
+}
+
+.review-list li img {
+    max-width: 100%;
+    height: 100%;
+    position: static
+}
+.review-list li .review-text-group {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+}
+.review-text-group .review-title  {
+    font-size: 18px;
+}
+.review-text-group .review-text {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: rgba(0,0,0,0.75)
+}
+footer .inner {
+    padding: 25px 0;
+    gap: 30px;
+}
+
+
+/* .gnb-area {display: none;}
+
+
+#main-visual .main-title .slogan {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+#main-visual .main-title .text {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+
+
+#sec-intro .inner {
+    display: block;
+    padding: 0 60px;
+}
+#sec-intro .text-area h2{
+    font-size: 28px;
+    text-align: center;
+}
+#sec-intro .text-area strong {
+    font-size: 24px;
+    text-align: center;
+}
+#sec-recommend .inner .recommend-list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#sec-intro .text-area .text {
+    font-size: 18px;
+    align-items: center;
+}
+section .btn {
+    margin-left: 40px;
+}
+
+section figure img{
+
+}
+#review-area .inner .review-list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.review-list li .review-text-group {
+    transform: translate(-50%, -90%);
+}
+.review-text-group .review-title {
+    font-size: 18px;
+
+}
+.review-text-group .review-text {
+    font-size: 14px;
+}
+section h2,
+section h2,
+#event .event-text h2{
+    font-size: 28px;
+}
+section .btn {
+    margin-left: 5px;
+} */

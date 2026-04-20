@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common_tablet.css);
+
+/* ---------------------------------------------------------------oneGrove_inside---------------------------------------------------------------*/
+#shop {
+    padding: 60px 20px 0 20px ;
+}
+
+#shop .inner {
+    display: block;
+}
+
+#shop .swiper-button-next,
+#shop .swiper-button-prev {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    width: 9px;
+}
+
+#shop .swiper-button-prev {
+    left: 670px;
+    transform: none;
+}
+
+#shop .swiper-button-next {
+    right: 10px;
+    transform: none;
+}
+
+#shop figure {
+    aspect-ratio: 16 / 11;
+    margin-bottom: 30px;
+}
+
+#shop .text-area {
+    padding-right: 0;
+}
+
+#shop .text-area h2 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+#shop .text-area .sub-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+#shop .text-area .text {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#shop .btn-area a {
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------------------섹션 event---------------------------------------------------------------*/
+#event {
+    padding: 80px 20px 140px 20px;
+}
+
+#event .title-area {
+    margin-bottom: 10px;
+}
+
+#event .title-area h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+#event .title-area h3 {
+    font-size: 16px;
+}
+
+#event .tab .swiper-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#event .contents {
+    display: block;
+}
+
+#event .contents figure {
+    width: 100%;
+    height: 450px;
+    margin: 36px 0 16px 0;
+}
+
+#event .contents .title {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+#event .contents .remainDate {
+    font-size: 14px;
+}
+
+#event .contents .period {
+    font-size: 14px;
+}
+
+

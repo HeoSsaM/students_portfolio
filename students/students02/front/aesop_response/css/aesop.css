@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+
+* {margin: 0; padding: 0;}
+li {list-style-type: none;}
+a {text-decoration: none;
+    color: inherit;}
+
+/* 공통요소 */
+.inner {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Interop';
+}
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+/* 모바일에서 활성화 */
+header .btn-mobile {display: none;}
+header .btn-close {display: none;}
+/* header */
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+}
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+}
+.gnb {
+    display: flex;
+    gap: 45px;
+    font-size: 18px;
+    padding: 40px 40px;
+    color: #fff;
+}
+.gnb a:hover {
+    color: #cdcdcd;
+}
+
+/* main-visual */
+header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 100;
+}
+/* main-visual */
+#main-visual .main-title {
+    position: absolute;
+    bottom: 380px; left: 500px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.main-title .copy1 {
+    margin-bottom: 20px;
+}
+#main-visual .main-bg img{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+
+
+/* section1 */
+.section1 {
+    background: #fffef2;
+    padding: 80px 0;
+}
+.section1-inner {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.section1-inner img{
+    display: block;
+    width: 400;
+    height: auto;
+}
+.section1-inner span{
+    display: block;
+    font-size: 15px;
+    color: #9e7144;
+    margin-bottom: 12px;
+}
+.section1-inner h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+}
+.section1-inner p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #333;
+}
+.section1-inner .button {
+    list-style: none;
+    padding: 0;
+}
+.section1-inner .button a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 28px;
+    font-size: 13px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+}
+.section1-text .button a:hover{
+    background: #000;
+}
+.section1-inner a:hover img {
+    transform: translateY(-12px);
+}
+
+
+/* section2 */
+.section2 {
+    background: #f6f5e8;
+    padding: 80px 0;
+}
+.section2 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #9e7144;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.12em;
+}
+.section2-inner {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    text-align: center;
+    align-items: flex-end;
+}
+.section2-inner img {
+    display: block;
+    margin-bottom: 30px;
+}
+.section2-inner .new1 img,
+.section2-inner .new2 img,
+.section2-inner .new3 img{
+    display: inline-block;
+    margin-left: 50px;
+}
+.section2-inner .new4 img{
+    display: inline-block;
+    margin-bottom: -8px;
+}
+.section2 .section2-inner .new-text strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+}
+.section2 .section2-inner .new-text{
+    font-size: 14px;
+    font-weight: 400;    
+    color: #333;
+    line-height: 6px;
+    margin-bottom: 15px;
+}
+.section2 .section2-inner .new-button a{
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 13px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.section2-inner a:hover img {
+    transform: translateY(-12px);
+}
+.section2 .section2-inner .new-button a:hover {
+    background: #000;
+}
+
+/* section3 */
+.section3 {
+    background: #fffef2;
+    padding: 80px 0;
+}
+.section3-inner {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.section3 .call-text span {
+    display: block;
+    font-size: 15px;
+    color: #9e7144;
+    margin-bottom: 12px;
+}
+.section3 .call-text h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+}
+.section3 .call-text p {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #333;
+}
+.section3 .call-text li a{
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 13px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.section3 .call-text li a:hover {
+    background: #000;
+}
+
+/* section4 */
+.section4 {
+    background: #fffef2;
+    padding: 60px 0;
+}
+.section4-inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+.section4-inner .story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.section4-inner .story strong {
+    display: block;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+    padding: 10px 100px 0px 0px;
+    border-top: 1px solid #6c6c6c;
+}
+.section4-inner .story a:hover strong,
+.section4-inner .story a:hover p{
+    color: #000;
+    border-color: #000;
+}
+.section4-inner .story a:hover img {
+    opacity: 1;
+    transform: scale(1.5);
+}
+.section4-inner .story strong img {
+    display: inline-block;
+    width: 16px;
+    height: auto;
+    margin-left: 10px;
+}
+.section4-inner .story p {
+    font-size: 14px;
+    color: #6c6c6c;
+}
+
+/* footer */
+footer {
+    background: #333333;
+    padding: 40px 0 60px 0;
+    color: #cfcaca;
+    position: relative;
+    font-weight: 400;
+}
+.footer-inner {
+    width: 1120px;
+    margin: 0 auto;
+}
+.infor p {
+    font-size: 14px;
+    margin-top: 8px;
+    letter-spacing: 0.04em;
+}
+footer .footer-logo .logo {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Suisse Int'l Mono";
+    margin-top: 40px;
+    letter-spacing: -2px;
+}
+footer .sns {
+    position: absolute;
+    top: 40px; right: 450px;
+    display: flex;
+    gap: 30px;
+}
+
+footer .sns a img{
+    width: 22px;
+    height: auto;
+}
+footer .sns a:hover img {
+    opacity: 1;
+    transform: scale(1.3);
+}

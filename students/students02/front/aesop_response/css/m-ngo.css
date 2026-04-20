@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+h2 {
+    margin-bottom: 30px;
+}
+#wrap {
+    width: 100%;
+}
+
+
+ 
+
+
+/* header */
+header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.85);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 0;
+}
+
+header .inner {
+    width: 100%;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    display: block;
+    height: 20px;
+}
+
+
+header .btn-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.8);
+}
+header .btn-mobile i {
+    font-size: 22px;
+    color: #fff;
+}
+
+header .btn-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+header .btn-close i {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+header .gnb {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 18vh;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    z-index: 100;
+}
+header .gnb li {
+    padding: 40px;
+}
+header .gnb li a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+header .gnb li + li {
+    padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+#main-visual .main-bg img {
+    height: 400px;
+}
+#main-visual .main-title {
+    display: none;
+}
+
+
+
+
+
+
+/* section1 */
+.section1 {
+    padding: 120px 40px;
+    width: 100%;
+}
+.section1-inner {
+    width: 100%;
+    display: block;
+}
+.section1-inner img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.section1-inner p {
+    font-size: 16px;
+    word-break: keep-all;
+}
+.section1-inner .button {
+    padding: 0;
+    margin: 40px auto 0 auto;
+}
+.section1-inner .button a {
+    padding: 12px 28px;
+    font-size: 15px;
+}
+
+/* section2 */
+.section2 {
+    width: 100%;
+    padding: 100px 40px 140px 40px;
+}
+.section2 h2 {
+    align-items: center;
+    margin-bottom: 100px;
+}
+.section2-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 120px;
+}
+
+.section2-inner img {
+    margin: 30px 0;
+}
+.section2 .section2-inner .new1,
+.section2 .section2-inner .new2,
+.section2 .section2-inner .new3 {
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+    padding-bottom: 80px;
+}
+
+.section2 .section2-inner .new-button {
+    margin: 30px 0;
+}
+
+/* section3 */
+.section3 {
+    padding: 0;
+    width: 100%;
+}
+.section3-inner {
+    width: 100%;
+    display: block;
+}
+.section3 .section3-inner .call-img img {
+    display: block;
+    width: 100%;
+}
+.section3 .section3-inner .call-img {
+    position: relative;
+}
+.section3 .call-text {
+    position: absolute;
+    transform: translateY(80%);
+    z-index: 10;
+    background: #f3eee4;
+    border-radius: 20px 20px 0 0;
+    padding: 40px 24px 50px 24px;
+    word-break: break-all;
+}
+
+/* section4 */
+.section4 {
+    padding: 350px 0 100px 0;
+}
+.section4-inner {
+    width: 100%;
+}
+.section4-inner .story {
+    display: flex;
+    flex-direction: column;
+}
+.section4-inner .story p {
+    margin-bottom: 80px;
+}
+.section4-inner .story strong {
+    position: relative;
+    padding-right: 80px;
+}
+.section4-inner .story strong img {
+    position: absolute;
+    top: 20px; right: 0;
+}
+
+/* footer */
+footer {
+    padding: 40px 40px 60px 40px;
+}
+.footer-inner {
+    width: 100%;
+    margin: 0 auto;
+    word-break: keep-all;
+}
+.infor p {
+    font-size: 14px;
+    margin-top: 8px;
+    letter-spacing: 0.04em;
+}
+footer .footer-logo .logo {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Suisse Int'l Mono";
+    margin-top: 40px;
+    letter-spacing: -2px;
+}
+footer .sns {
+    position: static;           /* absolute 없애기 */
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    /* justify-content: center;  ← 가운데 정렬하고 싶으면 이거 추가 */
+}
+
+
+
+footer .sns a img{
+    width: 22px;
+    height: auto;
+}
+footer .sns a:hover img {
+    opacity: 1;
+    transform: scale(1.3);
+}

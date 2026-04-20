@@ -1,0 +1,186 @@
+@media (max-width: 1100px) {
+  .sub-hero-inner,
+  .team-project,
+  .info-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-meta,
+  .hero-meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-grid,
+  .publish-grid,
+  .student-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-image img {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .design-swiper-button.prev,
+  .figma-swiper-button.prev,
+  .bundle-swiper-button.prev {
+    left: 0;
+  }
+
+  .design-swiper-button.next,
+  .figma-swiper-button.next,
+  .bundle-swiper-button.next {
+    right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bundle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teamBundleSwiper .team-image img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 72px 0;
+  }
+
+  .inner {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .header-inner {
+    min-height: auto;
+    padding: 18px 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .gnb {
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 56px 0 40px;
+  }
+
+  .hero-text {
+    padding: 30px 22px;
+    border-radius: 24px;
+  }
+
+  .profile-meta,
+  .hero-meta,
+  .work-grid,
+  .publish-grid,
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-hero-inner {
+    gap: 24px;
+  }
+
+  .profile-thumb {
+    max-width: 420px;
+  }
+
+  .student-info,
+  .info-card,
+  .category-card,
+  .figma-project,
+  .team-content {
+    padding: 22px;
+  }
+
+  .figma-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-nav {
+    flex-direction: column;
+  }
+
+  .page-link.center {
+    max-width: none;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .design-swiper-button,
+  .figma-swiper-button,
+  .bundle-swiper-button {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+  }
+
+  .design-swiper-button {
+    top: 36%;
+  }
+
+  .figma-swiper-button,
+  .bundle-swiper-button {
+    top: 38%;
+  }
+
+  .bundleSwiper,
+  .figmaSwiper {
+    padding-bottom: 48px;
+  }
+
+  .teamBundleSwiper .team-image img {
+    height: 220px;
+  }
+
+  .design-modal-dialog {
+    width: min(100% - 20px, 1100px);
+    margin: 30px auto;
+    border-radius: 18px;
+    padding: 12px;
+  }
+  .figma-modal-dialog {
+    width: min(100% - 20px, 1100px);
+    height: calc(100vh - 40px);
+    margin: 20px auto;
+    border-radius: 18px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bundle-swiper-button {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .section-head h3 {
+    font-size: 26px;
+  }
+
+  .work-body h4,
+  .publish-body h4,
+  .figma-head h4,
+  .team-content h4,
+  .student-name,
+  .info-card h4,
+  .category-card h4 {
+    font-size: 22px;
+  }
+
+  .profile-info h2,
+  .section-head h3,
+  .hero-text h2 {
+    word-break: keep-all;
+  }
+}

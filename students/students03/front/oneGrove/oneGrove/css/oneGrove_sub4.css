@@ -1,0 +1,235 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common.css);
+
+#main-visual {
+    position: relative;
+    height: 100vh;
+    background: url(../img/sub4_main_bg.png) no-repeat center/130%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: center;
+}
+
+/* getting-here */
+#getting-here {
+    padding: 90px 0 120px 0;
+}
+
+.tab-area {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0 10px;
+    margin-bottom: 66px;
+}
+
+.tab-area li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tab-area li a {
+    display: block;
+    padding: 20px;
+}
+
+.tab-area li.on {
+    color: #3c3a34;
+    border-bottom: 4px solid #3c3a34;
+}
+
+/* 4개 교통수단 공통 flex */
+#getting-here .transports .transport {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+#getting-here .transports .transport.show {
+    display: flex;
+}
+
+/* 지하철 */
+.transport.subway .subway-info .subway-route {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subway-info .subway-route+.subway-route {
+    margin-top: 36px;
+}
+
+.subway-route .subw-line {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #8b50a4;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.subway-route:nth-child(2) .subw-line {
+    background: #aa9872;
+}
+
+.subway-route:nth-child(3) .subw-line {
+    background: #63bedf;
+}
+
+.subw-info .info-title {
+    color: #3c3a34;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.subw-info .info-text {
+    color: #828282;
+    font-size: 16px;
+}
+
+/* 버스!! */
+.transport.bus .bus-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    row-gap: 30px;
+}
+
+.bus-info .sta-part {
+    margin-bottom: 14px;
+}
+
+.bus-info .sta-part .sta-name {
+    display: block;
+    color: #3c3a34;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bus-info .sta-part .sta-num {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.bus-info .bus-part .bus-cate {
+    color: #fff;
+    font-size: 16px;
+    padding: 2px 8px;
+    background: #3978bf;
+    border-radius: 30px;
+    margin-right: 8px;
+}
+
+.bus-info .bus-part .bus-cate.ji {
+    background: #8bb866;
+}
+
+.bus-info .bus-part .bus-cate.ma {
+    background: #acba7d;
+}
+
+.bus-info .bus-part .bus-cate.il {
+    background: #4c9a44;
+}
+
+.bus-info .bus-part .bus-cate.jik {
+    background: #c92727;
+}
+
+.bus-info .bus-part .bus-cate.kong {
+    background: #0060cc80;
+}
+
+.bus-info .bus-part {
+    margin-bottom: 10px;
+}
+
+.bus-info .bus-part .bus-num {
+    color: #828282;
+    font-size: 16px;
+}
+
+/* 자전거 */
+.transport.bicycle .bicycle-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transport.bicycle .bicycle-info .bicycle_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #a09673;
+    line-height: 85px;
+    text-align: center;
+}
+
+.bicycle-info .info-title {
+    color: #3c3a34;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bicycle-info .info-text {
+    color: #828282;
+    font-size: 16px;
+}
+
+/* 자차 */
+.transport.car .car-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.car-info .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.car-info .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transport.car .car-info .car_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #4c5975;
+    line-height: 75px;
+    text-align: center;
+}
+
+.car-info .info-title {
+    color: #3c3a34;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.car-info .info-text {
+    color: #828282;
+    font-size: 16px;
+}

@@ -1,0 +1,403 @@
+@charset "utf-8";
+
+/* 공통 */
+* {
+    box-sizing: border-box;
+}
+
+.inner {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section+section {
+    padding: 140px 0
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner .gnb-area .btn-close {
+    display: none;
+}
+
+.inner h1 {
+    width: 20%;
+}
+
+.inner .gnb-area {
+    width: 70%;
+}
+
+.gnb-area .gnb {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.gnb li {
+    font-family: 'MaruBuri';
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.4s;
+}
+
+.gnb li:hover {
+    color: #542800;
+}
+
+.gnb li>a {
+    display: block;
+    padding: 5px;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+/* main-visual */
+#main-visual {
+    /* width: 100%; */
+    /* 블럭엘리먼트는 기본적으로 넓이를 100퍼를 가지고 있으니 굳이 줄 필요없다. */
+    height: 860px;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)), url(../img/main-bg.png) no-repeat center/cover;
+    /* 화면전체에서 가운데 */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-visual .main-title .text {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'MaruBuri';
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/*main-product*/
+#main-product {
+    /* height: 860px; */
+    background: #dfe4dc;
+}
+
+#main-product .inner {
+    /* padding: 170px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+
+#main-product .inner figure {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 32px;
+}
+
+#main-product .inner figure img {
+    display: block;
+}
+
+#main-product .inner .main-yarn {
+    width: 100%;
+    text-align: center;
+    padding-top: 90px;
+    box-sizing: border-box;
+    background: url(../img/img-deco.png) no-repeat center/contain;
+}
+
+.main-yarn .label {
+    display: block;
+    font-family: 'DaeguDongseongRo';
+    font-size: 20px;
+    font-weight: 700;
+    color: #542800;
+}
+
+.main-yarn h2 {
+    font-family: 'MaruBuri';
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.main-yarn .text {
+    margin-top: 20px;
+    font-family: 'Paperozi';
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.main-yarn a {
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Paperozi';
+    font-weight: 400;
+    font-size: 26px;
+    border: 1px solid #542800;
+    border-radius: 40px;
+    padding: 20px 60px;
+    transition: transform 0.35s;
+}
+
+.main-yarn a:hover {
+    transform: scale(1.2);
+}
+
+/* sub-product */
+#sub-product {
+    /* height: 860px; */
+}
+
+#sub-product h2 {
+    /* padding-top: 120px; */
+    text-align: center;
+    font-family: 'DaeguDongseongRo';
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+#sub-product h2 span {
+    color: #4e6a3f;
+}
+
+#sub-product .inner .product-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.product-list li {
+    position: relative;
+    text-align: center;
+    background: #f1f2e4;
+    border-radius: 20px;
+    width: 290px;
+    /*  height: 410px; */
+    padding: 40px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 32px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-list li h3 {
+    font-family: 'MaruBuri';
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.product-list .text {
+    font-family: 'Paperozi';
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.product-list figure {
+    overflow: hidden;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 32px;
+    margin-bottom: 15px;
+}
+
+.product-list .color {
+    display: block;
+    font-family: 'Paperozi';
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-list .price {
+    display: block;
+    font-family: 'Paperozi';
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.product-list a {
+    display: inline-block;
+    font-family: 'Paperozi';
+    font-weight: 300;
+    color: #fff;
+    background: #5e7a4a;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 40px;
+    transition: transform 0.35s;
+}
+
+.inner .product-list a:hover {
+    transform: scale(1.2);
+}
+
+
+.product-list .label {
+    /* position: absolute;
+    top: 20px;
+    left: 20px; */
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Paperozi';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.product-list .label1 {
+    color: #beb3d6;
+}
+
+.product-list .label2 {
+    color: #7cc5a6;
+}
+
+.product-list .label3 {
+    color: #e9a86f;
+}
+
+.product-list .label4 {
+    color: #2c3a4a;
+}
+
+
+/* oneday-class */
+#oneday-class {
+    /* height: 860px; */
+    background: #dfe4dc;
+    padding: 100px 0;
+}
+
+#oneday-class .inner {
+    /* padding: 150px 25px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner .text-area h2 {
+    display: block;
+    font-family: 'DaeguDongseongRo';
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 170px;
+}
+
+.inner .text-area span {
+    color: #5e7a4a;
+}
+
+.inner .text-area .title {
+    font-family: 'Paperozi';
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.inner .text-area .text {
+    font-family: 'MaruBuri';
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 250px;
+}
+
+.inner .text-area a {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 12px;
+    background: #9cad90;
+    color: #fff;
+    font-family: 'Paperozi';
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.35s;
+}
+
+.inner .text-area a:hover {
+    background: #542800;
+}
+
+.inner .text-area a+a {
+    margin-left: 10px;
+}
+
+.inner .text-area a::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url(../img/white-angle.png) no-repeat center;
+    width: 20px;
+    height: 20px;
+    content: '';
+}
+
+
+#oneday-class .inner figure {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 32px;
+}
+
+#oneday-class .inner figure img {
+    display: block;
+}
+
+
+/* footer */
+footer {
+    background: #1d1d1d;
+    height: 100px;
+}
+
+footer .inner {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .inner img {
+    width: 40px;
+}
+
+footer .inner .copy {
+    color: #cdcdcd;
+    font-size: 18px;
+}

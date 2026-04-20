@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Route | Pages & Places</title>
+    <link rel="stylesheet" href="./css/myroute.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">Pages & Places</a>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="place.html">Places</a>
+            <a href="./board/list.html">Community</a>
+            <a href="myroute.html" class="active">My Route</a>
+        </nav>
+    </header>
+    <!-- HERO -->
+    <section class="hero myroute-hero">
+        <div class="hero-content">
+            <span>Personal Literary Archive</span>
+            <h1>당신만의 문학 지도를 완성해보세요</h1>
+            <h2>가고 싶은 장소를 저장하고, 방문의 기록을 남겨보세요.</h2>
+        </div>
+    </section>
+
+    <!-- 상태 요약 -->
+    <section class="myroute-summary">
+        <div class="summary-card">
+            <span>북마크</span>
+            <p>2</p>
+        </div>
+        <div class="summary-card">
+            <span>예정</span>
+            <p>2</p>
+        </div>
+        <div class="summary-card">
+            <span>완료</span>
+            <p>2</p>
+        </div>
+    </section>
+
+    <!-- 북마크 장소 -->
+    <section class="wish">
+        <div class="title">
+            <span>⭐</span>
+            <h2>가고 싶은 장소</h2>
+        </div>
+        <div class="wish-grid">
+            <article class="wish-card">
+                <h3>렐루 서점</h3>
+                <p>해리포터 세계관의 분위기를 떠올리게 하는 대표적인 문학 성지</p>
+                <button>여행 일정 추가</button>
+            </article>
+
+            <article class="wish-card">
+                <h3>그린 게이블스 하우스</h3>
+                <p>소설 속 초록 지붕집의 배경이 된 실제 집이 남아 있어 팬들의 대표 성지로 사랑받는 감성 여행지</p>
+                <button>여행 일정 추가</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- 방문 예정 -->
+    <section class="route-section schedule">
+        <div class="title">
+            <span>📅</span>
+            <h2>방문 예정</h2>
+        </div>
+        <div class="route-list schedule">
+            <div class="route-item schedule">
+                <strong>5월 12일</strong>
+                <p>런던 킹스크로스 플랫폼 산책</p>
+            </div>
+            <div class="route-item schedule">
+                <strong>6월 3일</strong>
+                <p>포르투 렐루 서점 + 도루강 루트</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 방문 완료 -->
+    <section class="route-section completed">
+        <div class="title">
+            <span>✅</span>
+            <h2>방문 완료</h2>
+        </div>
+        <div class="route-list completed">
+            <div class="route-item completed">
+                <strong>프라하 카프카 골목</strong>
+                <p>비 오는 저녁의 골목 분위기가 가장 인상적이었다.</p>
+            </div>
+            <div class="route-item completed">
+                <strong>파리 셰익스피어 앤 컴퍼니</strong>
+                <p>책 냄새와 오래된 거리 풍경이 작품 그 자체였다.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner">
+            <p>COPYRIGHT &copy; 2026 pages and Places. ALL RIGHT RESEVED.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

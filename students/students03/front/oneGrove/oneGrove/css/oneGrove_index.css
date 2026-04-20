@@ -1,0 +1,307 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common.css);
+html, body {
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------섹션 #main-visual------------------------------------------------------------------------*/
+#main-visual .swiper-slide {
+    position: relative;
+    height: 100vh;
+    background: no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#main-visual .swiper-slide.slide1 {
+    background-image: url(../img/main_bg1.jpg);
+}
+
+#main-visual .swiper-slide.slide2 {
+    background-image: url(../img/main_bg2.png);
+}
+
+#main-visual .swiper-slide.slide3 {
+    background-image: url(../img/main_bg3.png);
+}
+
+#main-visual .main-title {
+    position: absolute;
+    top: 45%;
+}
+
+#main-visual .main-title figure {
+    width: 360px;
+    margin-bottom: 22px;
+}
+
+#main-visual .main-title figure img {
+    width: 100%;
+}
+
+#main-visual .main-title .text {
+    color: #fff;
+    font-size: 18px;
+}
+
+*/
+/* ---------------------------------------------------------섹션 #intro-----------------------------------------------------------------*/
+/* #intro .inner {
+    padding: 120px 0 60px;
+} */
+
+#intro h2 {
+    font-size: 44px;
+    color: #3c3a34;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#intro h3 {
+    font-size: 20px;
+    color: #3c3a34;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+#intro .stories {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 58% 1fr;
+}
+
+.stories .story-left figure {
+    width: 100%
+}
+
+.stories .story-right figure {
+    width: 100%;
+    height: 184px;
+    margin-bottom: 20px;
+}
+
+.stories figure {
+    overflow: hidden;
+}
+
+.stories figure img {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: -55px;
+    transition: transform 0.4s;
+}
+
+.stories figure:hover img {
+    transform: scale(1.1);
+}
+
+.stories .story-right {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 36px;
+}
+
+.stories .text-area span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #9b9691;
+    padding: 3px 7px;
+    background: #e6e2e1;
+    margin-bottom: 10px;
+}
+
+.stories .text-area .text h4 {
+    color: #3c3a34;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.stories .text-area .text p {
+    font-size: 16px;
+    color: #828282;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+/* ---------------------------------------------------------섹션 #contents--------------------------------------------------------------------------*/
+#contents {
+    padding: 40px 0 150px 0;
+}
+
+#contents .inner {
+    max-width: 1240px;
+}
+
+#contents .inner h2 {
+    font-family: "Philosopher", sans-serif;
+    color: #3c3a34;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+#contents .inner h3 {
+    color: #3c3a34;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#contents .content-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#contents figure {
+    overflow: hidden;
+    width: 384px;
+    height: 466px;
+    margin-bottom: 20px;
+}
+
+#contents figure img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s;
+}
+
+#contents figure:hover img {
+    transform: scale(1.17);
+}
+
+#contents .text-area .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3c3a34;
+    margin-bottom: 2px;
+}
+
+#contents .text-area .text {
+    font-size: 18px;
+    color: #828282;
+    line-height: 150%;
+}
+
+/* ---------------------------------------------------------section #workLife--------------------------------------------------------------------------*/
+#workLife {
+    background: #1F2823;
+    padding: 90px 0;
+    height: 82vh;
+}
+
+#workLife h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 44px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#workLife h3 {
+    font-size: 20px;
+    color: #e6e2e1;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.swiper.work-life {
+    height: 400px;
+}
+
+#workLife .swiper-slide {
+    background: no-repeat center/cover;
+
+}
+
+#workLife .swiper-slide:nth-child(1) {
+    background-image: url(../img/img_workLife01.png);
+}
+
+#workLife .swiper-slide:nth-child(2) {
+    background-image: url(../img/img_workLife02.png);
+}
+
+#workLife .swiper-slide:nth-child(3) {
+    background-image: url(../img/img_workLife03.png);
+}
+
+#workLife .swiper-slide:nth-child(4) {
+    background-image: url(../img/img_workLife04.png);
+}
+
+#workLife .swiper-slide:nth-child(5) {
+    background-image: url(../img/img_workLife05.png);
+}
+
+.work-life .swiper-button-next,
+.work-life .swiper-button-prev {
+    content: '';
+    color: #fff;
+    width: 14px;
+}
+
+/* ---------------------------------------------------------section #artMuseum--------------------------------------------------------------------------*/
+#artMuseum {
+    padding-inline: 20px;
+    padding-bottom: 150px;
+}
+
+#artMuseum .inner {
+    display: grid;
+    grid-template-columns: 52% 1fr;
+    align-items: center;
+    gap: 100px;
+}
+
+#artMuseum img {
+    max-width: 100%
+}
+
+#artMuseum .text-area {
+    word-break: keep-all;
+}
+
+#artMuseum .text-area h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 38px;
+    color: #3c3a34;
+    margin-bottom: 16px;
+}
+
+#artMuseum .text-area .sub-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3c3a34;
+    margin-bottom: 14px;
+}
+
+#artMuseum .text-area .text {
+    font-size: 18px;
+    color: #828282;
+    line-height: 150%;
+    margin-bottom: 70px;
+}
+
+#artMuseum .btn-area a {
+    padding: 14px 18px;
+    border-radius: 4px;
+    color: #e6e2e1;
+    font-size: 14px;
+    font-weight: 700;
+    background: #3c3a34;
+    transition: 0.15s;
+}
+
+#artMuseum .btn-area a:hover {
+    color: #3c3a34;
+    background: #e6e2e1;
+}

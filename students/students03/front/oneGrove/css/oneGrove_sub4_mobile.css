@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common_mobile.css);
+
+#main-visual {
+    background: url(../img/sub4_main_bg.png) no-repeat center/500% fixed;
+}
+
+/* getting-here */
+#getting-here {
+    padding: 40px 0 100px 0;
+}
+
+#getting-here .inner {
+    padding-inline: 20px;
+}
+
+.tab-area {
+    padding: 12px 0 10px;
+}
+
+.tab-area li a {
+    font-size: 14px;
+}
+
+/* 4개 교통수단 공통 flex */
+#getting-here .transports .transport figure {
+    height: 256px;
+}
+
+
+/* 지하철 */
+.subway-info .subway-route+.subway-route {
+    margin-top: 30px;
+}
+
+.subway-route .subw-line {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.subw-info .info-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.subw-info .info-text {
+    font-size: 12px;
+}
+
+/* 버스 */
+.transport.bus .bus-info {
+    gap: 40px;
+    row-gap: 30px;
+}
+
+.bus-info .bus-part .bus-cate {
+    margin-right: 2px;
+}
+
+/* 자전거 */
+.transport.bicycle .bicycle-info .bicycle_icon {
+    width: 46px;
+    height: 46px;
+    line-height: 64px;
+}
+
+.transport.bicycle .bicycle-info .bicycle_icon img {
+    width: 30px;
+}
+
+.bicycle-info .info-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.bicycle-info .info-text {
+    font-size: 12px;
+}
+
+/* 자차 */
+.transport.car .car-info .car_icon {
+    width: 46px;
+    height: 46px;
+    line-height: 64px;
+}
+
+.transport.car .car-info .car_icon img {
+    width: 30px;
+}
+
+.car-info .info-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.car-info .info-text {
+    font-size: 12px;
+}
+
+.car-info .right img{
+  width: 40px;
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common_mobile.css);
+/* ---------------------------------------------------------------oneGrove_inside---------------------------------------------------------------*/
+#shop .swiper-button-next,
+#shop .swiper-button-prev {
+    bottom: 26px;
+    width: 8px;
+}
+
+#shop .swiper-button-prev {
+    left: 330px;
+}
+
+#shop .swiper-button-next {
+    right: 20px;
+}
+
+/* ---------------------------------------------------------섹션 event---------------------------------------------------------------*/
+#event {
+    padding: 80px 20px 120px 20px;
+}
+
+#event .title-area {
+    margin-bottom: 18px;
+}
+
+#event .title-area h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#event .title-area h3 {
+    font-size: 14px;
+}
+
+#event .tab .swiper-wrapper {
+    margin-bottom: 0;
+}
+
+#event .contents figure {
+    height: 262px;
+}
+
+

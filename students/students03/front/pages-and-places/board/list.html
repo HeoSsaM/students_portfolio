@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPABASE Board</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="../index.html">Pages & Places</a>
+        </div>
+
+        <nav class="main-nav">
+            <a href="../index.html" class="active">Home</a>
+            <a href="../place.html">Places</a>
+            <a href="list.html">Community</a>
+            <a href="../myroute.html">My Route</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Community</h1>
+        <p class="page-desc">이용자들의 여행 후기를 자유롭게 살펴보세요.</p>
+
+        <div class="card">
+            <div class="top-bar">
+                <h2>글 목록</h2>
+                <a href="write.html" class="btn">글쓰기</a>
+            </div>
+
+            <ul id="postList" class="post-list"></ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="inner">
+            <p>COPYRIGHT &copy; 2026 pages and Places. ALL RIGHT RESEVED.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/list.js"></script>
+</body>
+
+</html>

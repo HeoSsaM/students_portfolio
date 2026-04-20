@@ -1,0 +1,118 @@
+@charset "utf-8";
+.inner {
+    padding: 100px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.text {
+    line-height: 1.5;
+    font-size: 18px;
+    word-break: keep-all;
+}
+.title{
+    height: 600px;
+    margin: auto;
+    background: url(../img/main-bg.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title .title-text{
+    font-family: 'GMarketSans';
+    font-size: 25px;
+    font-weight: 500;
+    color: aliceblue;
+}
+#md-pick{
+    background: #e7d2c8;
+}
+#md-pick .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.md-picktext{
+    width:40%;
+}
+.md-picktext h2{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #4d3636;
+}
+.md-picktext .text{
+    font-family: 'GounBatang';
+    margin-bottom: 40px;
+    line-height: 2;
+}
+.md-picktext .button{
+    display: inline-block;
+    width: 300px;
+    height: 58px;
+    background: url(../img/상품-버튼.png)no-repeat center;
+    border-radius: 25px 25px;
+}
+#inner img {
+    display: block;
+}
+.product-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.product-list figure{
+    margin-bottom: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.product-list h3{
+    font-family: 'GounBatang';
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.product-list p{
+    font-family: 'GounBatang';
+    font-weight: 700;
+}
+
+#gift .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#gift .gift-text {
+    font-family: 'GounBatang';
+    font-weight: 700;
+    font-size: 30px;
+    width:40%;
+}
+
+
+#footer {
+    background: #a87c7c;
+
+}
+#footer .inner {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;    
+}
+#footer .event {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 3;
+    font-size: 20px;
+}
+
+

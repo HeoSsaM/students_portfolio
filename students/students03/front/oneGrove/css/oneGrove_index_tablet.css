@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common_tablet.css);
+
+/* --------------------------------------------------------섹션 #main-visual------------------------------------------------------------------------*/
+#main-visual .main-title figure {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+#main-visual .main-title figure img {
+    width: 38%;
+}
+
+/* ---------------------------------------------------------섹션 #intro-----------------------------------------------------------------*/
+#intro {
+    padding: 8% 0 6% 0;
+}
+
+#intro .inner {
+    padding: 0 3%;
+    position: relative;
+}
+
+#intro .title {
+    position: absolute;
+    width: 100%;
+    top: 640px;
+   
+}
+
+#intro h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#intro h3 {
+    font-size: 14px;
+}
+
+#intro .stories {
+    display: block
+}
+
+.stories .story-left figure {
+    width: 100%;
+    height: 100%;
+}
+
+.stories .story-right {
+    margin-top: 60px;
+}
+
+.stories .story-right figure {
+    height: 250px;
+}
+
+.stories figure img {
+    top: -105px;
+}
+
+.stories .text-area .text h4 {
+    font-size: 18px;
+}
+
+.stories .text-area .text p {
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------------섹션 #contents--------------------------------------------------------------------------*/
+#contents {
+    padding: 30px 3% 100px 3%;
+}
+
+#contents .inner {
+    max-width: 768px;
+}
+
+#contents .inner h2 {
+    font-size: 24px;
+}
+
+#contents .inner h3 {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+#contents .content-area {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    scroll-snap-type: x mandatory;
+}
+
+.content01,
+.content02,
+.content03 {
+    flex: 0 0 56%;
+    scroll-snap-align: start;
+}
+
+/* ---------------------------------------------------------section #workLife--------------------------------------------------------------------------*/
+#workLife {
+    padding: 60px 0;
+    height: 62vh;
+}
+
+#workLife h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+#workLife h3 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.swiper.work-life {
+    height: 420px;
+}
+
+#workLife .swiper-slide {
+    width: 600px;
+    background: no-repeat center/cover;
+}
+
+/* ---------------------------------------------------------section #artMuseum--------------------------------------------------------------------------*/
+#artMuseum {
+    padding-inline: 20px;
+    padding-bottom: 100px;
+}
+
+#artMuseum .inner {
+    position: relative;
+}
+
+#artMuseum .inner {
+    display: block;
+}
+
+#artMuseum .text-area h2 {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+}
+
+#artMuseum .text-area br {
+    display: none;
+}
+
+#artMuseum .text-area .sub-title {
+    text-align: center;
+    font-size: 20px;
+    margin-block: 14px;
+}
+
+#artMuseum .text-area .text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#artMuseum .btn-area {
+    text-align: center;
+}

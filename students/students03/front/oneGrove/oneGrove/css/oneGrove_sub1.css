@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common.css);
+
+#main-visual {
+    position: relative;
+    height: 100vh;
+    background: url(../img/sub1_main_bg.png) no-repeat center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: center;
+}
+
+/* ---------------------------------------------------------------oneGrove_inside---------------------------------------------------------------*/
+#shop {
+    padding-bottom: 0;
+}
+
+#shop .inner {
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    align-items: center;
+    gap: 60px
+}
+
+#shop .swiper-button-next,
+#shop .swiper-button-prev {
+    position: absolute;
+    top: 20px;
+    width: 11px;
+    color: #1b1a15;
+}
+
+#shop .swiper-button-prev {
+    right: 0;
+    transform: translateX(1400px);
+}
+
+#shop .swiper-button-next {
+    right: 0;
+    transform: translateX(-450px);
+}
+
+#shop figure {
+    aspect-ratio: 16 / 12;
+}
+
+#shop img {
+    width: 100%;
+    height: 100%;
+}
+
+#shop .text-area {
+    word-break: keep-all;
+    padding-right: 100px;
+}
+
+#shop .text-area h2 {
+    font-size: 16px;
+    color: #9b9691;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+#shop .text-area .sub-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #3c3a34;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+#shop .text-area .text {
+    font-size: 16px;
+    color: #3c3a34;
+    line-height: 150%;
+    margin-bottom: 70px;
+}
+
+#shop .btn-area a {
+    padding: 14px 18px;
+    border-radius: 4px;
+    color: #3c3a34;
+    font-size: 14px;
+    font-weight: 700;
+    background: #e6e2e1;
+    transition: 0.15s;
+}
+
+#shop .btn-area a:hover {
+    color: #e6e2e1;
+    background: #3c3a34;
+}
+
+/* ---------------------------------------------------------섹션 event---------------------------------------------------------------*/
+#event {
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+#event .title-area {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#event .title-area h2 {
+    font-size: 34px;
+    color: #3c3a34;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+#event .title-area h3 {
+    font-size: 18px;
+    color: #3c3a34;
+}
+
+/* #event .btn-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+#event .btn-area button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    border: 1px solid #3c3a34;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #3c3a34;
+    background: transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#event .btn-area button.on {
+    background: #3c3a34;
+    color: #fff;
+    font-weight: 700;
+} */
+
+#event .tab .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#event .tab .swiper-slide {
+    width: auto;
+}
+
+#event .tab .swiper-wrapper a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    border: 1px solid #3c3a34;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #3c3a34;
+    background: transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#event .tab .swiper-wrapper a.on {
+    background: #3c3a34;
+    color: #fff;
+    font-weight: 700;
+}
+
+#event .contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    row-gap: 56px;
+}
+
+#event .contents figure {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 259px;
+    margin-bottom: 20px;
+}
+
+#event .contents figure::after {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.84);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#event .contents figure.on::after {
+    opacity: 1;
+}
+
+#event .contents figure img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    transition: transform 0.5s;
+}
+
+#event .contents figure:hover img {
+    transform: scale(1.2);
+}
+
+#event .contents .title {
+    color: #3c3a34;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+#event .contents .remainDate {
+    position: relative;
+    color: #828282;
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 21px;
+}
+
+#event .contents .remainDate:after {
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #828282;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    content: '';
+}
+
+#event .contents .period {
+    color: #828282;
+    font-size: 16px;
+}
+
+.contents .cont {
+    display: none;
+}
+
+.contents .cont.show {
+    display: block;
+}
+
+#event .none {
+    padding: 120px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+#event .none.off {
+    display: none;
+}
+
+#event .none .text {
+    color: #666;
+    font-size: 14px;
+}

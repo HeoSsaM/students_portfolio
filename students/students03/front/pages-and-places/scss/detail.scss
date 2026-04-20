@@ -1,0 +1,70 @@
+@charset "utf-8";
+@use './common.scss';
+
+.detail-area {
+    position: relative;
+    height: calc(100vh - 77px);
+    overflow: hidden;
+
+    .detail-image {
+        position: absolute;
+        inset: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .detail-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: 1;
+    }
+
+    .detail-text {
+        position: relative;
+        z-index: 2;
+        color: white;
+        max-width: 700px;
+        padding: 150px 0 120px 120px;
+
+        h1 {
+            font-size: 4rem;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+
+            &.desc {
+                word-break: keep-all;
+            }
+
+            &.location {
+                font-weight: 600;
+            }
+        }
+
+        h3 {
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 7px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}

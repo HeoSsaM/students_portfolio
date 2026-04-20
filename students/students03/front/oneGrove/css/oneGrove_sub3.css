@@ -1,0 +1,380 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common.css);
+
+#main-visual {
+    position: relative;
+    height: 100vh;
+    background: url(../img/sub3_main_bg.png) no-repeat center/130%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: center;
+}
+
+/* ----------------------------------섹션 services---------------------------------------------- */
+#services {
+    padding: 150px 0 0 0;
+}
+
+#services ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+#services ul li {
+    position: relative;
+}
+
+#services ul figure {
+    width: 288px;
+    height: 320px;
+    overflow: hidden;
+}
+
+#services ul figure img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+#services ul figure:hover img {
+    transform: scale(1.2);
+}
+
+#services ul li .text {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+#services ul li .text p {
+    text-align: center;
+}
+
+#services ul li p span {
+    font-size: 22px;
+    font-weight: 500;
+    color: #e6e2e1;
+}
+
+#services ul li p i {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ----------------------------------섹션 premium---------------------------------------------- */
+#premium {
+    padding-bottom: 160px;
+}
+
+#premium .title-area {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#premium .title-area h2 {
+    font-size: 34px;
+    color: #3c3a34;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+#premium .title-area h3 {
+    font-size: 18px;
+    color: #3c3a34;
+}
+
+/* tab */
+#premium .tab-area {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0 10px;
+}
+
+#premium .tab-area li {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#premium .tab-area li a {
+    display: block;
+    padding: 20px;
+}
+
+#premium .tab-area li.on {
+    color: #3c3a34;
+    border-bottom: 4px solid #3c3a34;
+}
+
+/* --탭 메뉴 밑 탭 콘텐츠 --*/
+.pre-conts {
+    margin-top: 30px;
+}
+
+/* 탭 메뉴의 첫 번째 GroveLounge*/
+.grovelounge .swiper-slide {
+    height: 520px;
+    background: no-repeat center/cover;
+}
+
+.grovelounge .swiper-slide.slide1 {
+    background-image: url(../img/sub3_pre01_01.png);
+}
+
+.grovelounge .swiper-slide.slide2 {
+    background-image: url(../img/sub3_pre01_02.png);
+}
+
+.grovelounge .swiper-slide.slide3 {
+    background-image: url(../img/sub3_pre01_03.png);
+}
+
+/* 탭 메뉴의 두 번째 Meeting Room*/
+.pre-cont.pre02 .pre02 {
+    height: 520px;
+    background: no-repeat center/cover;
+}
+
+.pre-cont.pre02 .pre02.p01 {
+    background-image: url(../img/sub3_pre02_01.png);
+}
+
+.pre-cont.pre02 .pre02.p02 {
+    margin-top: 100px;
+    background-image: url(../img/sub3_pre02_02.png);
+}
+
+/* 탭 메뉴의 세 번째 릴렉스룸*/
+.relaxRoom .swiper-slide {
+    height: 520px;
+    background: no-repeat center/cover;
+}
+
+.relaxRoom .swiper-slide.slide1 {
+    background-image: url(../img/sub3_pre03_01.png);
+}
+
+.relaxRoom .swiper-slide.slide2 {
+    background-image: url(../img/sub3_pre03_02.png);
+}
+
+/* 탭 메뉴의 네 번째 Executive Room*/
+.pre-cont.pre04 .executiveRoom {
+    height: 520px;
+    background: url(../img/sub3_pre04.png) center/cover;
+}
+
+
+
+
+/* more-info */
+#premium .more-info {
+    width: 68%;
+    margin: 60px auto 0;
+    color: #3c3a34;
+}
+
+.more-info h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 38px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.more-info ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    row-gap: 20px;
+}
+
+.more-info ul .title {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.more-info ul .text {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#premium .pre-conts .pre-cont {
+    display: none;
+}
+
+#premium .pre-conts .pre-cont.show {
+    display: block;
+}
+
+/* 예약모달창 나오게 하는 버튼 */
+.modal-open {
+    position: relative;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #e6e2e1;
+    font-size: 14px;
+    font-weight: 700;
+    background: #3c3a34;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.modal-open::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: 0.1s;
+}
+
+button:hover::after {
+    opacity: 1;
+}
+
+/*예약하기 모달 */
+.dim {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 10;
+}
+
+.login-modal {
+    position: relative;
+    max-width: 800px;
+    height: 580px;
+    margin: 120px auto;
+    background: #fff;
+    padding: 80px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-modal .modal-container {
+    width: 50%;
+    margin: auto;
+}
+
+.modal-container .modal-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 30px;
+    color: #3c3a34;
+    background: transparent;
+    font-weight: 500;
+    padding: 2px 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.modal-container .modal-close:hover {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.modal-container .modal-header {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.modal-container .modal-header h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.modal-container .login-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #E6E2E1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-form input::placeholder {
+    color: #E6E2E1;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.login-form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+.login-form .password-group {
+    position: relative;
+}
+
+.login-form .password-group .showPw {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #E6E2E1;
+}
+
+.showPw .ri-eye-line {
+    display: none;
+}
+
+.modal-container .login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.login-options .solution {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.login-options .solution a {
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+}
+
+.modal-container #login {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 2px;
+    font-size: 14px;
+    background: #e6e2e1;
+    color: #b3a3a0;
+    margin-bottom: 46px;
+    cursor: pointer;
+}
+
+.modal-container .modal-footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.modal-container .modal-footer .help-box strong {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.modal-container .modal-footer .help-box p {
+    color: #828282;
+    font-size: 12px;
+}

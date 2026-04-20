@@ -1,0 +1,158 @@
+@charset "utf-8";
+@use './common.scss';
+
+.myroute-hero {
+    background: linear-gradient(rgba(40, 28, 18, 0.55),
+            rgba(40, 28, 18, 0.75)),
+        url("https://images.unsplash.com/photo-1621414154392-4eb9ee0b6f57?w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fCVFQiVBQyVCOCVFRCU5NSU5OSVFQyVBNyU4MCVFQiU4RiU4NHxlbnwwfHwwfHx8MA%3D%3D") center/cover no-repeat;
+}
+
+/* 상태 카드 */
+.myroute-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 60px 8% 40px;
+    background: rgb(255, 252, 243);
+
+    .summary-card {
+        border: 1px solid rgba(91, 70, 54, 0.15);
+        padding: 32px;
+        text-align: center;
+
+        span {
+            color: #7a6655;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 42px;
+            font-weight: 700;
+            margin-top: 12px;
+            color: common.$h2;
+        }
+    }
+}
+
+.wish {
+    padding: 100px 10%;
+    background: common.$bg;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+
+        span {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 38px;
+            color: common.$h2;
+        }
+    }
+
+    .wish-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        .wish-card {
+            background: #fdf8ee;
+            border: 1px solid #d8c7a0;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 4px 6px 15px rgba(90, 60, 30, 0.12);
+            transition: 0.3s;
+            position: relative;
+
+            &:hover {
+                transform: translateY(-8px);
+                box-shadow: 6px 10px 20px rgba(90, 60, 30, 0.18);
+            }
+
+            h3 {
+                font-size: 28px;
+                margin-bottom: 15px;
+                color: #4b3621;
+            }
+
+            p {
+                line-height: 1.7;
+                color: #555;
+                margin-bottom: 25px;
+            }
+
+            button {
+                padding: 12px 20px;
+                border: none;
+                background: common.$button;
+                color: #fff;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 15px;
+
+                &:hover {
+                    background: common.$btnHober;
+                }
+            }
+        }
+    }
+}
+
+.route-section {
+    padding: 60px 10%;
+    background: common.$bg;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+
+        span {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 38px;
+            color: common.$h2;
+        }
+    }
+
+    .route-list {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: #c9b28d;
+        }
+
+        .route-item {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #e6d7cf;
+            background: #fff;
+
+            strong {
+                color: rgba(0, 0, 0, 0.75);
+                font-size: 20px;
+            }
+
+            p {
+                color: rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Grove</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/oneGrove_sub2.css">
+    <link rel="stylesheet" href="css/oneGrove_sub2_tablet.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/oneGrove_sub2_mobile.css" media="screen and (max-width: 430px)">
+    <script src="js/jquery-4.0.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/oneGrove_sub2.js" defer></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="index.html" class="logoM"><img src="img/logo_white.png" alt=""></a>
+                </h1>
+                <nav class="gnb-area">
+                    <ul class="gnb">
+                        <a href="index.html" class="logoM"><img src="img/logo_white.png" alt=""></a>
+                        <li>
+                            <a href="oneGrove_sub1.html" class="menu">What's On</a>
+                            <a href="" class="accordion"><i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="oneGrove_sub1.html">Event & Promotion</a></li>
+                                <li><a href="">Stories of One Grove</a></li>
+                                <li><a href="">Neighborhood</a></li>
+                                <li><a href="">Press & Media</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="oneGrove_sub2.html" class="menu">Lifestyle</a>
+                            <a href="" class="accordion"><i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="">All</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Eat & Drink</a></li>
+                                <li><a href="">Culture</a></li>
+                                <li><a href="">Wellness</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu">Work</a>
+                            <a href="" class="accordion"><i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="">Life in One Grove</a></li>
+                                <li><a href="oneGrove_sub3.html">Guest Services</a></li>
+                                <li><a href="">Leasing</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="oneGrove_sub4.html" class="menu">About</a>
+                            <a href="" class="accordion"><i class="ri-arrow-down-s-line"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="">Building of One Grove</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Getting Here</a></li>
+                            </ul>
+                        </li>
+                        <button type="button" class="reserveM">어메니티 예약</button>
+                    </ul>
+                    <ul class="items">
+                        <li class="reserve">
+                            <a href="#" class="btn"><span>어메니티 예약</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="lang">KR</a>
+                            <ul class="sub-lang">
+                                <li><a href="">KR</a></li>
+                                <li><a href="">EN</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""><img src="img/ico_place.png" alt=""></a></li>
+                        <li><a href=""><img src="img/ico_search.png" alt=""></a></li>
+                        <button type="button" class="menuOpen"><i class="ri-menu-line"></i></button>
+                        <button type="button" class="menuClose"><i class="ri-close-large-line"></i></button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- header -->
+
+        <section id="main-visual">
+            <div class="main-title">
+                <h1>LIFESTYLE</h1>
+                <p class="text">원그로브몰에서는 우리 삶에 자연스레 함께 하고 있는, 꼭 필요한 브랜드부터 트렌디하고 감각적인 리테일까지 모두 경험하실 수 있어요.</p>
+            </div>
+        </section>
+        <!-- main-visual -->
+
+        <section id="together">
+            <div class="inner">
+                <div class="title-area">
+                    <h2>Walk, shop, eat and drink in One Grove</h2>
+                    <h3>일도 산책도 쇼핑도 함께, 오직 원그로브에서</h3>
+                </div>
+                <div class="btn-area">
+                    <button class="active on" data-filter="all">All</button>
+                    <button data-filter="shop">Shop</button>
+                    <button data-filter="eat">Eat & Drink</button>
+                    <button data-filter="culture">Culture</button>
+                    <button data-filter="wellness">Wellness</button>
+                </div>
+                <div class="stores">
+                    <div class="store shop show">
+                        <figure>
+                            <img src="img/sub2_toge_shop01.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">모던 베이식 캐주얼 웨어를 지향하는 무신사 스탠다드의 키즈 라인입니다.</p>
+                            </div>
+                        </figure>
+                        <p class="text">무신사 스탠다드 키즈</p>
+                    </div>
+                    <div class="store eat show">
+                        <figure>
+                            <img src="img/sub2_toge_eat01.png.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">1932년부터 이어온 전통적인 활장어 전문 브랜드</p>
+                            </div>
+                        </figure>
+                        <p class="text">우나기 욘다이메 키쿠카와</p>
+                    </div>
+                    <div class="store culture show">
+                        <figure>
+                            <img src="img/sub2_toge_cul01.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">원어민 프라이빗 영어 유스클럽</p>
+                            </div>
+                        </figure>
+                        <p class="text">더 블루타이거</p>
+                    </div>
+                    <div class="store wellness show">
+                        <figure>
+                            <img src="img/sub2_toge_well01.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">건강검진의 새로운 관점</p>
+                            </div>
+                        </figure>
+                        <p class="text">부민 프레스티지 라이프케어센터 마곡의원</p>
+                    </div>
+                    <div class="store shop show">
+                        <figure>
+                            <img src="img/sub2_toge_shop02.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">모던 베이직 캐주얼웨어를 지향하는 무신사의 자체 브랜드입니다.</p>
+                            </div>
+                        </figure>
+                        <p class="text">무신사 스탠다드</p>
+                    </div>
+                    <div class="store eat show">
+                        <figure>
+                            <img src="img/sub2_toge_eat02.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">코리안-멕시칸 바토스와 뉴욕 스타일 폴리스 피자의 만남. 두 브랜드를 한 자리에서 경험하세요.</p>
+                            </div>
+                        </figure>
+                        <p class="text">바토스앤폴리스</p>
+                    </div>
+                    <div class="store culture show">
+                        <figure>
+                            <img src="img/img_content01.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">일상 속 쉼표, 도심 속 예술이 있는 감성 공간</p>
+                            </div>
+                        </figure>
+                        <p class="text">마이아트뮤지엄</p>
+                    </div>
+                    <div class="store wellness show">
+                        <figure>
+                            <img src="img/sub2_toge_well02.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">바쁘고 힘든 환자를 위해 365일 점심시간 없이 진료하는 정형외과</p>
+                            </div>
+                        </figure>
+                        <p class="text">제이엘정형외과의원</p>
+                    </div>
+                    <div class="store shop show">
+                        <figure>
+                            <img src="img/sub2_toge_shop03.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">모두를 위한 혁신</p>
+                            </div>
+                        </figure>
+                        <p class="text">샤오미</p>
+                    </div>
+                    <div class="store eat show">
+                        <figure>
+                            <img src="img/sub2_toge_eat03.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">스페인 츄러스 No.1</p>
+                            </div>
+                        </figure>
+                        <p class="text">츄레리아 산 로만</p>
+                    </div>
+                    <div class="store culture show">
+                        <figure>
+                            <img src="img/sub2_toge_cul03.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">One More Rep.</p>
+                            </div>
+                        </figure>
+                        <p class="text">버핏그라운드</p>
+                    </div>
+                    <div class="store wellness show">
+                        <figure>
+                            <img src="img/sub2_toge_well03.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">환자의 삶에 안녕을 선물하는 이비인후과</p>
+                            </div>
+                        </figure>
+                        <p class="text">안녕이비인후과</p>
+                    </div>
+                    <div class="store shop show">
+                        <figure>
+                            <img src="img/sub2_toge_shop04.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">프레쉬 핸드메이드 코스메틱 브랜드</p>
+                            </div>
+                        </figure>
+                        <p class="text">러쉬</p>
+                    </div>
+                    <div class="store eat show">
+                        <figure>
+                            <img src="img/sub2_toge_eat04.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">100시간의 정성으로 만드는 매운 카레 전문점</p>
+                            </div>
+                        </figure>
+                        <p class="text">아비꼬</p>
+                    </div>
+                    <div class="store culture show">
+                        <figure>
+                            <img src="img/sub2_toge_cul04.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">SINCE 1988 머리 잘하고 깨끗한 미용실에서 당신을 행복하게 '아이디헤어'</p>
+                            </div>
+                        </figure>
+                        <p class="text">아이디헤어</p>
+                    </div>
+                    <div class="store wellness show">
+                        <figure>
+                            <img src="img/sub2_toge_well04.png" alt="">
+                            <div class="opa-area">
+                                <p class="opa-text">아름다움의 높은 기준. High standard in beauty, HIGH LINE</p>
+                            </div>
+                        </figure>
+                        <p class="text">하이라인피부과</p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="event">
+            <div class="inner">
+                <div class="title-area">
+                    <h2>Event & Promotion</h2>
+                    <h3>원그로브에서만 경험하실 수 있는 특별한 이벤트와 혜택을 모았어요.</h3>
+                </div>
+                <div class="content-area">
+                    <div class="event01">
+                        <figure>
+                            <a href=""><img src="img/sub2_event01.png" alt=""></a>
+                        </figure>
+                        <div class="text-area">
+                            <span class="tag"><a href="">Event&Promotion</a></span>
+                            <div class="text">
+                                <a href="">
+                                    <h4>더레어와 맞이하는 설 이벤트</h4>
+                                    <span class="remainDate"></span>
+                                    <span class="period">
+                                        2026.02.09.~ 2026.02.15
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event02">
+                        <figure>
+                            <a href=""><img src="img/sub1_event04.png" alt=""></a>
+                        </figure>
+                        <div class="text-area">
+                            <span class="tag"><a href="">Event&Promotion</a></span>
+                            <div class="text">
+                                <a href="">
+                                    <h4>명란 소스 증정 EVENT</h4>
+                                    <span class="remainDate"></span>
+                                    <span class="period">
+                                        2026.01.05.~ 2026.02.28
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="banner">
+            <a href="">
+                <div class="inner">
+                    <div class="text-area">
+                        <p class="title">
+                            Enhancing Your Work and Life in One Grove
+                        </p>
+                        <p class="text">
+                            지금, 원그로브에서 일상의 가치를 새롭게 만나보세요!
+                        </p>
+                    </div>
+                    <div class="btn-area">
+                        Plan Your visit
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!-- banner -->
+
+        <footer>
+            <div class="inner">
+                <div class="top">
+                    <div class="footer-logo">
+                        <a href=""><img src="img/img_logo_footer.png" alt=""></a>
+                    </div>
+                    <p class="address">서울 강서구 공항대로 165</p>
+                </div>
+                <div class="bot">
+                    <div class="bot-left">
+                        <ul class="info">
+                            <li><a href="">사이트맵</a></li>
+                            <li><a href="">층별안내</a></li>
+                            <li><a href="">오시는 길</a></li>
+                            <li><a href="">고객서비스</a></li>
+                        </ul>
+                        <ul class="policy">
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                    <div class="bot-right">
+                        <ul class="sns">
+                            <li><a href=""><img src="img/ico_instagram.png" alt=""></a></li>
+                            <li><a href=""><img src="img/ico_youtube.png" alt=""></a></li>
+                        </ul>
+                        <p class="copy">COPYRIGHT &copy; ONE GROVE. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <button class="btn-top"><img src="img/img_top.png" alt=""></button>
+    </div>
+</body>
+
+</html>

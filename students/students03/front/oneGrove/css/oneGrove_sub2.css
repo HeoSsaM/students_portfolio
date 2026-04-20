@@ -1,0 +1,239 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(common.css);
+
+#main-visual {
+    position: relative;
+    height: 100vh;
+    background: url(../img/sub2_main_bg.png) no-repeat center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: center;
+}
+/* ------------------------------------------------섹션 together---------------------------------------------------------------*/
+#together {
+    padding-block: 150px;
+}
+
+/* 제목 영역 */
+#together .title-area {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#together .title-area h2 {
+    font-size: 34px;
+    color: #3c3a34;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+#together .title-area h3 {
+    font-size: 18px;
+    color: #3c3a34;
+}
+
+/* 탭 버튼 영역 */
+#together .btn-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+#together .btn-area button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    border: 1px solid #3c3a34;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #3c3a34;
+    background: transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#together .btn-area button.on {
+    background: #3c3a34;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* 입점 매장 영역 */
+#together .stores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 56px;
+}
+
+#together .stores .store {
+    display: none;
+}
+
+#together .stores .store.show {
+    display: block;
+}
+
+#together .stores figure {
+    position: relative;
+    margin-bottom: 20px;
+    width: 286px;
+    height: 346px;
+    overflow: hidden;
+}
+
+#together .stores figure:hover img {
+    transform: scale(1.1);
+}
+
+#together .stores figure img {
+    transition: transform 1.5s;
+    width: 100%;
+}
+
+#together .stores figure .opa-area {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+#together .stores figure:hover .opa-area {
+    opacity: 1;
+}
+
+.opa-area .opa-text {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    word-break: keep-all;
+    font-size: 19px;
+    font-family: "Philosopher", sans-serif;
+    color: #3c3a34;
+}
+
+/* #together .stores figure .opa-area.on {
+    display: block;
+} */
+#together .stores .text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3c3a34;
+}
+/* ---------------------------------------------------------섹션 event---------------------------------------------------------------*/
+
+#event {
+    padding: 20px 0 170px 0;
+}
+
+#event .inner {
+    max-width: 1240px;
+}
+
+#event .inner h2 {
+    font-family: "Philosopher", sans-serif;
+    color: #3c3a34;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+#event .inner h3 {
+    color: #3c3a34;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#event .content-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+#event .content-area figure {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#event .content-area figure img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+}
+
+#event .content-area figure:hover img {
+    transform: scale(1.1);
+}
+
+#event .content-area figure::after {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.84);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#event .content-area figure.on::after {
+    opacity: 1;
+}
+
+#event .text-area .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #9b9691;
+    padding: 3px 7px;
+    background: #e6e2e1;
+    margin-bottom: 10px;
+}
+
+#event .text-area .text h4 {
+    color: #3c3a34;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#event .remainDate {
+    position: relative;
+    color: #828282;
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 21px;
+}
+
+#event .remainDate:after {
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #828282;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    content: '';
+}
+
+#event .period {
+    color: #828282;
+    font-size: 16px;
+}

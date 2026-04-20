@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+/* 공통 */
+section+section {
+    padding: 150px 0
+}
+
+.inner {
+    position: relative;
+    width: min(1280px,94%);
+    margin: 0 auto;
+}
+
+section h2 {
+    font-family: 'GMarketSans';
+    font-weight: 500;
+    color: #000;
+    font-size: 44px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+section h2 span {
+    color: #2c9f4e
+}
+
+section .text {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+section .btn {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 15px;
+    background: #12712e;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+section .btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(135deg);
+    background: #c03819;
+    content: '';
+    transition: all 0.3s ease;
+}
+
+section .btn:hover::before {
+    width: 100%;
+}
+
+section .btn span {
+    position: relative;
+    z-index: 2;
+    /* z-index는 반드시 반드시 반드시 포지션과 함께 */
+}
+
+section figure img {
+    max-width: 100%;
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+header .gnb-area .gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+header .gnb-area .gnb>li>a {
+    display: block;
+    font-family: 'Cafe24ProSlim';
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    transition: text-shadow 0.25s;
+}
+
+header .gnb-area .gnb .gnb_about {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+header .gnb-area .gnb>li>a:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* main-visual 영역 */
+#main-visual {
+    height: 860px;
+    background: url(../img/main_bg.png) no-repeat center/cover;
+}
+
+#main-visual .inner {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#main-visual .main-title {
+    padding-right: 100px;
+}
+
+#main-visual .main-title .slogan {
+    font-family: 'Cafe24ClassicType';
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+#main-visual .main-title .text {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: -1px;
+}
+
+/* story */
+#sec-intro {
+    background: #ddd9c7;
+}
+
+#sec-intro .inner {
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#sec-intro figure {
+    width: 45%
+}
+
+#sec-intro .text-area h2 {
+    font-family: 'Cafe24ClassicType';
+    color: #2c9f4e;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#sec-intro .text-area strong {
+    display: block;
+    color: #dd674b;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#sec-intro .text-area .text {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 1.8;
+}
+
+
+/* 추천메뉴 */
+#sec-recommend .recommend-list {
+    display: flex;
+    gap: 30px;
+}
+
+.recommend-list li {
+    position: relative;
+    height: 600px;
+    border-radius: 20px;
+    border: 1px solid #2c9f4e;
+    padding: 40px 40px 60px;
+    text-align: center;
+    transition: all 0.35s ease;
+}
+
+.recommend-list li span {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 1px solid #dd674b;
+    margin-bottom: 20px;
+}
+
+.recommend-list li strong {
+    display: block;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.recommend-list li .text {
+    font-size: 16px;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+
+.recommend-list figure {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #efefef;
+    background: no-repeat center/cover;
+    transition: all 0.25s ease-in-out;
+    margin: 0 auto 25px;
+}
+
+.recommend-list .recom01 figure {
+    background-image: url(../img/img_mdpick01.png);
+}
+
+.recommend-list .recom02 figure {
+    background-image: url(../img/img_mdpick02.png);
+}
+
+.recommend-list .recom03 figure {
+    background-image: url(../img/img_mdpick03.png);
+}
+
+.recommend-list .recom04 figure {
+    background-image: url(../img/img_mdpick04.png);
+}
+
+.recommend-list .recom02 span {
+    border-color: #2c9f4e
+}
+
+.recommend-list .recom03 span {
+    border-color: #70481a
+}
+
+.recommend-list .recom04 span {
+    border-color: #ca7d46
+}
+
+.recommend-list li .btn-area {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.recommend-list li:hover {
+    background: #ebe4da;
+    border-color: #ebe4da;
+    box-sizing: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    transform: translateY(-10px);
+}
+
+.recommend-list li:hover .btn::before {
+    display: none;
+}
+
+.recommend-list li:hover figure {
+    transform: scale(1.05);
+}
+
+.recommend-list li:hover .btn {
+    background: #dd674b;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* 이벤트 영역 */
+#event {
+    padding: 0;
+    height: 400px;
+    background: url(../img/event_bg.png) no-repeat left center/cover;
+}
+
+#event .inner {
+    height: 100%;
+    position: relative;
+}
+
+#event .event-text {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#event .event-text h2 {
+    font-family: 'Cafe24ClassicType';
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+/* 리뷰영역 */
+#review-area {
+    position: relative;
+}
+
+#review-area::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background: #e8e8de;
+    content: '';
+    z-index: -1;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.review-list li {
+    width: 100%;
+}
+
+.review-list li>a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: 490px;
+}
+
+.review-list li img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.review-list li .review-text-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+}
+
+.review-text-group .review-title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.review-text-group .review-text {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.review-text-group .review-writer {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.75)
+}
+
+footer .inner {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 180px;
+}
+
+footer .copy {
+    color: rgba(255, 255, 255, 0.7)
+}

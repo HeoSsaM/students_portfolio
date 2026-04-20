@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+
+/* 공통 요소 */
+.inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: fixed;
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px
+}
+
+.logo img {
+    width: 290px;
+    height: 74px;
+}
+
+.gnb-area .gnb {
+    font-family: 'BagelFat';
+    color: #fa5d49;
+    font-size: 24px;
+    display: flex;
+    gap: 45px;
+    text-shadow: 2px 1px 3px #8b8a8a;
+}
+
+/* main-visual */
+
+#main-visual {
+    height: 860px;
+    background: url(../img/main-bg.png) no-repeat center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main-visual .main-title {
+    font-family: 'BagelFat';
+    gap: 30px;
+    text-align: center;
+    transform: translateY(60%);
+}
+
+#main-visual .main-title .slogan {
+    color: #1d88f6;
+    font-size: 48px;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+#main-visual .main-title .text {
+    font-size: 28px;
+    color: #fff;
+    -webkit-text-stroke: 1px #503f25;
+
+}
+
+#main-visual .main-title br {
+    display: none;
+}
+
+/* sec-author */
+
+#sec-author {
+    background: #fffbe4;
+}
+
+#sec-author .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 204px 400px;
+
+}
+
+#sec-author figure img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.author-info .tag {
+    color: #e54238;
+    margin-bottom: 30px;
+}
+
+.author-info img {
+    margin-bottom: 30px;
+}
+
+.author-info .text {
+    margin-bottom: 40px;
+}
+
+#sec-author .author-info a {
+    display: inline-block;
+    font-family: 'BagelFat';
+    background: #fb7571;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 24px;
+}
+
+/* sec-products */
+
+#sec-products {
+    background: #d4c8ee;
+    position: relative;
+}
+
+#sec-products .inner {
+    padding: 100px;
+}
+
+#sec-products .title {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+#sec-products .title h2 {
+    font-family: 'BagelFat';
+    font-size: 48px;
+    color: #4c275c;
+    -webkit-text-stroke: 1.5px #e9e8e8;
+}
+
+#sec-products .title p {
+    font-size: 18px;
+    color: #6f4b7e;
+}
+
+#sec-products .products {
+    display: flex;
+    gap: 15px;
+    transform: translateX(-2.5%);
+}
+
+#sec-products .products a p {
+    text-align: center;
+    transform: translateY(-230%);
+    color: #383838;
+    font-size: 22px;
+}
+
+#sec-products .products-page {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+#sec-products .products-page a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #4c275c;
+}
+
+#sec-products .products-page a:hover {
+    background: #fff;
+
+}
+
+#sec-products .angle {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec-products .angle a:first-child {
+    margin-left: 90px;
+}
+
+#sec-products .angle a:last-child {
+    margin-right: 90px;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    background: #383838;
+    height: 200px;
+}
+
+footer .inner {
+    position: absolute;
+    display: flex;
+    top: 35%;
+    left: 250px;
+}
+
+footer img {
+    width: 200px;
+    height: 60px;
+}
+
+footer .f-nav {
+    color: #898a8a;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.f-nav ul {
+    display: flex;
+    gap: 15px;
+    color: #b9b9b9;
+    margin-bottom: 10px;
+}
