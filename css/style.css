@@ -187,6 +187,9 @@ body {
     linear-gradient(to top, rgba(65, 32, 95, 0.55), transparent),
     url(../img/common/bg3.png) no-repeat center bottom/cover;
   box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text {
