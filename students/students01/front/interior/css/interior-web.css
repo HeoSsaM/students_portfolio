@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* 공통 */
+.inner {
+    max-width: 1280px;
+    margin: auto;
+}
+section {
+    padding: 150px 0;
+}
+section .text-area p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+.btn {
+    display: inline-block;
+    border-radius: 12px;
+    background: #121212;
+    color: #fff;
+    font-size: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#wrap {
+    font-family: 'BookkMyungjo';
+}
+.main-visual{
+    background: url(../img/web/main-img.png) no-repeat center/cover;
+    height: 960px;
+    position: relative;
+}
+.main-visual header {
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 1280px;
+}
+.main-visual header .inner .menu {
+    display: none;
+}
+.main-visual h1 {
+    /* position: absolute;
+    top: 85%; left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.main-visual .gnb {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.main-visual .inner a:hover {
+    color: gray;
+}
+
+
+/* exhibition area */
+.exhibition-area h2 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+.exhibition-area .exhivition {
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.exhibition-area .exhivition figure {
+    width: 40%;
+    background: url(../img/web/sec1-img-bg.png) no-repeat left top;
+}
+.exhibition-area .exhivition figure .pic {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.exhibition-area .exhivition .text-area h3 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+.exhibition-area .exhivition .text-area .view {
+    transition: 0.3s;
+}
+.exhibition-area .exhivition .text-area .view:hover {
+    opacity: 80%;
+}
+
+/* our works */
+.oiw-area h2 {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.oiw-area .oiw {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.oiw-area h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.oiw-area .pic-area {
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.oiw-area .pic-area img {
+    transition: all 0.25s;
+}
+.oiw-area .pic-area:hover img {
+    transform: scale(1.1);    
+}
+.oiw-area .text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.oiw-area .btn-area {
+    text-align: center;
+}
+
+
+/* cs-area */
+.cs-area {
+    padding: 0;
+    height: 950px;
+    background: url(../img/web/sec3-img.png) no-repeat right center;
+    background-size: 850px 950px;
+}
+.cs-area .inner {
+    height: 100%;
+}
+.cs-area .cs-area-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cs-area  h2 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 120px;
+}
+.cs-area p {
+    font-size: 24px;
+}
+
+
+.message-area {
+    padding: 0;
+    background: url(../img/web/sec4-img.png) no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-area h2 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.message-area p {
+    font-size: 16px;
+    line-height:1.6;
+    color: rgba(255,255,255,0.7)
+}
+footer {
+    background: #dddddb;
+    height: 230px;
+    position: relative;
+}
+footer .text {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    font-size: 16px;
+}
+footer .text p {
+    margin-bottom: 15px;
+    padding: 0 30px;
+}
+footer a:hover {
+    color: gray;
+}
