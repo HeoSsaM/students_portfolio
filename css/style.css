@@ -543,7 +543,12 @@ body {
 .btn-fill:hover {
   opacity: 0.92;
 }
-
+.team-project .button-row {
+  position: absolute;
+  bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+}
 /* =========================
    Design Swiper
 ========================= */
@@ -944,6 +949,7 @@ body.modal-open {
    Team
 ========================= */
 .team-project {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
@@ -960,7 +966,7 @@ body.modal-open {
   object-fit: cover;
 }
 
-.team-content {
+.team-content {  
   padding: 34px;
   padding-top: 0;
 }
@@ -976,7 +982,7 @@ body.modal-open {
 }
 
 .team-list {
-  margin-top: 20px;
+  margin: 20px 0 80px;
   display: grid;
   gap: 12px;
 }
@@ -990,6 +996,9 @@ body.modal-open {
 
 .team-list li.bg-none {
   background: none;
+  margin-bottom: 40px;
+  color: darkred;
+  text-align: center;
 }
 
 /* =========================
@@ -1018,6 +1027,9 @@ body.modal-open {
 
 .teamBundleSwiper .button-row {
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bundle-empty {
